@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/titelfeld"
-        android:layout_width="wrap_content"
+        android:layout_width="52dp"
         android:layout_height="0dp"
         android:layout_marginBottom="15dp"
         android:layout_marginEnd="30dp"
@@ -21,9 +21,11 @@
         android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/jahrfeld"
         app:layout_constraintEnd_toStartOf="@+id/titelinput"
-        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="32dp" />
+
     <android.support.design.widget.TextInputLayout
         android:id="@+id/titelinput"
         android:layout_width="0dp"
@@ -33,11 +35,11 @@
         android:layout_marginStart="30dp"
         app:layout_constraintBottom_toTopOf="@+id/jahrinput"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="6"
         app:layout_constraintStart_toEndOf="@+id/titelfeld"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginRight="168dp"
         android:layout_marginLeft="30dp">
+
         <android.support.design.widget.TextInputEditText
             android:id="@+id/titel1"
             android:layout_width="match_parent"
@@ -47,7 +49,7 @@
 
     <TextView
         android:id="@+id/jahrfeld"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="0dp"
         android:layout_marginBottom="14dp"
         android:layout_marginEnd="32dp"
@@ -60,9 +62,9 @@
         android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/zeitfeld"
         app:layout_constraintEnd_toStartOf="@+id/jahrinput"
-        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titelfeld" />
+
     <android.support.design.widget.TextInputLayout
         android:id="@+id/jahrinput"
         android:layout_width="0dp"
@@ -73,11 +75,11 @@
         android:layout_marginTop="5dp"
         app:layout_constraintBottom_toTopOf="@+id/zeitinput"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="3"
         app:layout_constraintStart_toEndOf="@+id/jahrfeld"
         app:layout_constraintTop_toBottomOf="@+id/titelinput"
         android:layout_marginRight="168dp"
         android:layout_marginLeft="32dp">
+
         <android.support.design.widget.TextInputEditText
             android:id="@+id/erscheinungsjahr1"
             android:layout_width="match_parent"
@@ -87,22 +89,22 @@
 
     <TextView
         android:id="@+id/zeitfeld"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="0dp"
         android:layout_marginBottom="15dp"
         android:layout_marginEnd="32dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="15dp"
         android:gravity="start"
-        android:text="Laufzeit:                 "
+        android:text="Laufzeit:"
         android:textAlignment="textStart"
         android:textColor="@android:color/black"
         android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/alterfeld"
         app:layout_constraintEnd_toStartOf="@+id/zeitinput"
-        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/jahrfeld" />
+
     <android.support.design.widget.TextInputLayout
         android:id="@+id/zeitinput"
         android:layout_width="0dp"
@@ -113,11 +115,11 @@
         android:layout_marginTop="3dp"
         app:layout_constraintBottom_toTopOf="@+id/fsk_spinner"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="3"
         app:layout_constraintStart_toEndOf="@+id/zeitfeld"
         app:layout_constraintTop_toBottomOf="@+id/jahrinput"
         android:layout_marginRight="168dp"
         android:layout_marginLeft="32dp">
+
         <android.support.design.widget.TextInputEditText
             android:id="@+id/laufzeit1"
             android:layout_width="match_parent"
@@ -127,22 +129,22 @@
 
     <TextView
         android:id="@+id/alterfeld"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="0dp"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="32dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="14dp"
         android:gravity="start"
-        android:text="FSK:     "
+        android:text="FSK:"
         android:textAlignment="textStart"
         android:textColor="@android:color/black"
         android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/ortfeld"
         app:layout_constraintEnd_toStartOf="@+id/fsk_spinner"
-        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/zeitfeld" />
+
     <Spinner
         android:id="@+id/fsk_spinner"
         android:layout_width="0dp"
@@ -154,7 +156,6 @@
         android:textSize="24dp"
         app:layout_constraintBottom_toTopOf="@+id/server_spinner"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="5"
         app:layout_constraintStart_toEndOf="@+id/alterfeld"
         app:layout_constraintTop_toBottomOf="@+id/zeitinput"
         android:layout_marginRight="168dp"
@@ -162,7 +163,7 @@
 
     <TextView
         android:id="@+id/ortfeld"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="0dp"
         android:layout_marginBottom="15dp"
         android:layout_marginEnd="32dp"
@@ -176,34 +177,32 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/server_spinner"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/alterfeld" />
+
     <Spinner
         android:id="@+id/server_spinner"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginEnd="168dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="10dp"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintEnd_toStartOf="@+id/speicherbutton"
         app:layout_constraintStart_toEndOf="@+id/ortfeld"
         app:layout_constraintTop_toBottomOf="@+id/fsk_spinner"
-        android:layout_marginRight="168dp"
+        android:layout_marginRight="16dp"
         android:layout_marginLeft="32dp" />
 
     <Button
         android:id="@+id/speicherbutton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
         android:layout_marginEnd="27dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="275dp"
+        android:layout_marginStart="16dp"
         android:text="Speichern"
         android:textAlignment="center"
         android:textColor="@android:color/black"
@@ -211,5 +210,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/server_spinner"
-        app:layout_constraintTop_toTopOf="parent"/>
+        tools:ignore="MissingConstraints"
+        android:layout_marginRight="27dp"
+        android:layout_marginLeft="16dp" />
+
 </android.support.constraint.ConstraintLayout>
