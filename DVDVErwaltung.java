@@ -29,7 +29,7 @@ public class DVDVerwaltung {
     public String laufzeit;
     public String fsk;
     public String server;
-    String user = "admin";
+    String user = "Test-User";
     String pass = "1234";
 
     NtlmPasswordAuthentication auth = new NtlmPasswordAuthentication(null, user, pass);
