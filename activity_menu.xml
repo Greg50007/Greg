@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.niklas.medienlister.Menu"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/bearbeitenbutton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="88dp"
+        android:drawableTop="@drawable/ic_bearbeiteniconapp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tabellenbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="60dp" />
+
+    <Button
+        android:id="@+id/tabellenbutton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="88dp"
+        android:drawableTop="@drawable/ic_tabelleniconapp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/suchbutton"
+        app:layout_constraintStart_toEndOf="@+id/bearbeitenbutton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/suchbutton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="88dp"
+        android:drawableTop="@drawable/ic_lupeniconapp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tabellenbutton"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="60dp" />
+</android.support.constraint.ConstraintLayout>
