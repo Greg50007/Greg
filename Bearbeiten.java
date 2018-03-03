@@ -41,30 +41,6 @@ public class Bearbeiten extends AppCompatActivity implements View.OnClickListene
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        int Measuredwidth = 0;
-        int Measuredheight = 0;
-        Point size = new Point();
-        WindowManager w = getWindowManager();
-
-        Display d = w.getDefaultDisplay();
-        Measuredwidth = d.getWidth();
-        Measuredheight = d.getHeight();
-
-        DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(dm);
-        double x = Math.pow(Measuredwidth/dm.xdpi,2);
-        double y = Math.pow(Measuredheight/dm.ydpi,2);
-
-
-        System.out.println("------------------" + y);
-        System.out.println("------------------" + x);
-
-        if(y < x){
-            TextView t = findViewById(R.id.titelfeld);
-            t.setTextSize((float) (x* 1.2));
-        }
-
-
       fskspinner = findViewById(R.id.fsk_spinner);
       ArrayAdapter<CharSequence> fsk_adapter = ArrayAdapter.createFromResource(this, R.array.fsk_werte, android.R.layout.simple_spinner_dropdown_item);
       fsk_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
